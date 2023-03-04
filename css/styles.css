@@ -1,0 +1,552 @@
+/* Student name: Kei Wai Tsui
+Student ID: 300361374
+This the CSS for my final project */
+
+
+/* styles for the navigation menu */
+nav {
+	text-align: center;
+	background-color:#424245;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+nav > a {
+	padding-left: 15px;
+	padding-right: 15px;
+	text-decoration: none; 
+    font-size: 15px;
+	color:white;
+	font-weight: bold;
+	border-right: 1px solid white;
+}
+nav > a:hover {
+	background-color:#a8dadc;
+	color: black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: underline;
+}
+nav > a:active {
+	color:red;
+}
+.introduction {
+    border-left: 1px solid white;
+}
+
+/* styles for the drop down navigation menu */
+.dropdown {
+    display: inline;
+    position: relative;
+    padding-top: 10px;
+	padding-bottom: 10px;
+}
+.dropdownbtn {  
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: bold;
+    background-color: inherit;  
+    padding-left: 15px;
+	padding-right: 15px;
+    border-right: 1px solid white; 
+}
+.dropdown:hover {
+    background-color:#a8dadc; 
+}
+.dropdown:hover > .dropdownbtn {
+    color:black;
+    text-decoration: underline;
+}
+.dropdownContent {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 38px;
+    background-color: rgba(66, 66, 69, 0.7);
+    min-width: 180px;
+    transform: translateX(-50%);
+}
+.dropdownContent > a {
+    display: block;
+    padding: 12px 15px;
+	text-decoration: none; 
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+	color:white;	
+}
+.dropdownContent > a:hover {
+    background-color: #a8dadc;
+    color:black;
+    text-decoration: underline;     
+}
+.dropdownContent > a:active {
+    color:red;
+} 
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+/* styles for the body, article, paragraph and lists */
+body{
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	max-width: 1200px;
+	margin: 20px auto;
+}
+article > h1 {
+	font-weight: bold;
+	text-decoration: underline;
+	color:black;
+	text-align: center;
+	font-size: 24px;
+}
+article {
+	background-color: rgba(255, 255, 255, 0.55);
+	padding: 16px 24px;
+}
+h2 {
+	font-weight: bold;
+	text-decoration: underline;
+	color:#99582a;
+	font-style: italic;
+	text-align: center;
+	font-size: 20px;
+}
+h3 {
+    text-align: center;
+}
+p, ol, ul {
+	font-size: 16px;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul {
+	list-style-type:square;
+}
+
+/* styles for the lists on page - Chinese Food Culture */
+.aside4 > ol > li > ul {
+	padding-bottom: 16px;
+}
+/* styles for the lists on page - Food recipes */
+.p3Section2 > section > ol > li {
+    padding-bottom: 16px;
+}
+/* styles for the lists on order page */
+ol.shop_list > li {
+    padding-bottom: 16px;
+}
+/* styles for the payment summary on order page */
+.paymentSum {
+    background-color: rgba(189, 224, 254, 0.5);
+    width: 80%;
+    border: 1px solid black;
+    padding: 10px 50px;
+    margin-left: 65px;
+}
+
+/* Style for responsive design */
+/* For mobile phone */
+@media only screen and (max-width:480px){
+    /* Style for responsive design for page 1(Introduction) */
+    .p1wrapper1 {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "p1Section1"
+                            "p1Aside1"
+                            "p1Section2" 
+                            "p1Aside2";                   
+        grid-gap: 10px;
+    }
+
+    /* Style for responsive design for page - Food Culture */
+    .p2wrapper1 {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "p2Section1"
+                            "p2Aside1"
+                            "p2Aside2" 
+                            "p2Aside3"
+                            "p2Section2"
+                            "p2Aside4";                   
+        grid-gap: 10px;
+    }
+    /* Style for responsive design for page - Food Recipes */
+    .p3wrapper1 {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "p3Section1"
+                            "p3Section2"
+                            "p3Section3";
+        grid-gap: 15px;
+    }
+}
+
+/* For Laptop */
+@media only screen and (min-width:481px){
+    /* Style for responsive design for page 1(Introduction) */
+    .p1wrapper1 {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "p1Section1 p1Section1 p1Aside1"
+                            "p1Section2 p1Section2 p1Section2"
+                            "p1Aside2 p1Aside2 p1Aside2";
+        grid-gap: 15px;
+    }
+
+    /* Style for responsive design for page - Food Culture */
+    .p2wrapper1 {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "p2Section1 p2Section1 p2Section1"
+                            "p2Aside1 p2Aside1 p2Aside1"
+                            "p2Aside2 p2Aside2 p2Aside2"
+                            "p2Aside3 p2Aside3 p2Aside3"
+                            "p2Section2 p2Section2 p2Section2"
+                            "p2Aside4 p2Aside4 p2Aside4";                   
+        grid-gap: 10px;
+    }
+    /* Style for responsive design for page - Food Recipes */
+    .p3wrapper1 {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "p3Section1 p3Section1"
+                            "p3Section2 p3Section3";
+        grid-gap: 15px;                       
+    }
+}
+
+/* For desktop */
+@media only screen and (min-width:1281px){
+    /* Style for responsive design for page 1(Introduction) */
+    .p1wrapper1 {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "p1Section1 p1Section1 p1Aside1"
+                            "p1Section2 p1Section2 p1Aside2";                   
+        grid-gap: 15px;
+    }
+
+    /* Style for responsive design for page - Food Culture */
+    .p2wrapper1 {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "p2Section1 p2Section1 p2Section1"
+                            "p2Aside1 p2Aside2 p2Aside3"
+                            "p2Section2 p2Section2 p2Aside4";                   
+        grid-gap: 10px;
+    }
+        /* Style for responsive design for page - Food Recipes */
+        .p3wrapper1 {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "p3Section1 p3Section1"
+                                "p3Section2 p3Section3";
+            grid-gap: 15px;                       
+        }
+}
+
+/* styles for the CSS grid on page 1(introduction) */
+.p1Section1{
+    grid-area: p1Section1;
+}
+.p1Section2{
+    grid-area: p1Section2;
+}
+.p1Aside1{
+    grid-area: p1Aside1;
+}
+.p1Aside2{
+    grid-area: p1Aside2;
+}
+
+/* styles for the CSS grid on page - Food Culture */
+.p2Section1{
+    grid-area: p2Section1;   
+}
+.p2Aside1{
+    grid-area: p2Aside1;
+}
+.p2Aside2{
+    grid-area: p2Aside2;
+}
+.p2Aside3{
+    grid-area: p2Aside3;
+}
+.p2Section2{
+    grid-area: p2Section2;
+}
+.p2Aside4{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    grid-area: p2Aside4;
+}
+
+/* styles for the CSS grid on page - Food Recipes */
+.p3Section1{
+    grid-area: p3Section1;   
+}
+.p3Section2{
+    grid-area: p3Section2;   
+}
+.p3Section3{
+    grid-area: p3Section3; 
+    display: flex;
+    align-items: stretch;
+    justify-content: center;  
+}
+
+/* styles for the CSS grid on contact page  */
+.p5wrapper1 {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "p5section1 p5section1 p5section2";
+    grid-gap: 15px;                       
+}
+
+.p5section1 {
+    grid-area: p5section1;
+}
+.p5section2 {
+    grid-area: p5section2;
+}
+
+/* styles for the flexbox */
+.wrappperForFlexbox1 {
+	display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+.wrappperForFlexbox2 {
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.wrappperForFlexbox3 {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.p2 {
+    margin-bottom: 16px;
+}
+.p1Item1 {
+    padding: 15px;
+    margin:15px;
+    flex: 0 0 auto;
+}
+.flexbox1 {
+    margin: 20px 23px;
+}
+
+/* styles for the table */
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 6px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+table > caption {
+	font-style: italic;
+	font-weight: bold;
+    color: #99582a;
+	font-size: 16px;
+	text-decoration: underline;
+	margin-bottom: 5px;
+}
+.caption{
+    font-size: 16px;
+	color: #99582a;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/* styles for the table for form on page - contact*/
+.table_for_form, td.tableForm {
+    border-collapse: collapse;
+    text-align: center;
+    border: 0px;
+}
+th.tableForm {
+    border-collapse: collapse;
+    text-align: center;
+    border-bottom: 1px solid black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+/* styles for the images on page 1(introduction) */
+#photo {
+    height: auto;
+	width: 300px;
+}
+.my-photo {
+    height: auto;
+	width: 300px;
+}
+#my-kitchen {
+    height: auto;
+	width: 300px;
+}
+
+/* styles for the images on pages - Food Culture and Recipes */
+.food {
+    height: 250px;
+	width: 350px;
+    object-fit: contain;
+}
+/* styles for the images on contact pages */
+#photo2 {
+    height: auto;
+	width: 300px;
+}
+
+/* styles for video on page - Food Culture */
+.video {
+    display: block;
+    margin: 24px auto;
+    width: 560px;
+    height: 315px;
+    border: 0px;
+}
+
+/* styles for the span on page - Food Recipes */
+.span_for_p3 {
+    padding: 15px;
+    margin:15px;
+    flex: 0 0 auto;
+}
+
+
+/* styles for the tabbled panel */
+.container_for_tabbled {
+    width: 1000px;
+    margin: 0 auto;
+}
+ul.recipes{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul.recipes li{
+    background: none;
+    color: #6f1d1b;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+ul.recipes li.current{
+    background-color: rgba(189, 224, 254, 0.7);
+    color: #6f1d1b;
+}
+
+.recipes-content{
+    display: none;
+    background-color: rgba(189, 224, 254, 0.7);
+    padding: 15px;
+}
+
+.recipes-content.current{
+    display: inherit;
+}
+a.link {
+    text-decoration: none;
+    color: #6f1d1b;
+    font-size: 20px;
+}
+
+/* style for the accordion panel */
+.accordion {
+    width: 80%;
+    margin: 20px auto;
+    color: black;
+    background-color: rgba(250, 237, 205, 0.7);
+    padding: 20px 35px;
+}
+  
+.accordion .wrapper_for_accordion {
+    position: relative;
+}
+
+.accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+}
+   
+.accordion .content {
+    position: relative;
+    background: rgba(250, 237, 205, 0.7);
+    height: 0;
+    font-size: 16px;
+    text-align: justify;
+    width: 80%;
+    overflow: hidden;
+    transition: 0.6s;
+}
+  
+.accordion hr {
+    border: 1px solid black;
+}
+
+.accordion .wrapper_for_accordion.active .content {
+    height: 110px;
+}
+
+/* style for the modal dialog panel */
+.modal_dialog_container {
+    display: none;  
+    width: 90%; 
+    height: auto; 
+    overflow: auto; 
+    background-color: rgba(189, 224, 254, 0.5);
+}
+
+.modal-content {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+/* style for the label, button on order page */
+#modalBtn {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #a7c957;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.legend {
+    display: table;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.label_image {
+    width: 180px;
+    height: 180px;
+}
+
+/* style for the form of contact page */
+.form_for_contact {
+    background-color: rgba(189, 224, 254, 0.5);
+    width: 90%; 
+    height: auto; 
+    overflow: auto; 
+    text-align: center;
+}

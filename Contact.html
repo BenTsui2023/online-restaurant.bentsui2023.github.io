@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>			
+        <a href="index.html" class="introduction">Introduction</a>
+        <div class="dropdown">
+            <button class="dropdownbtn">Food Culture
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownContent">
+                <a href="Chinese_food_culture.html">Chinese Food Culture</a>
+                <a href="Japanese_food_culture.html">Japanese Food Culture</a>
+                <a href="Korean_food_culture.html">Korean Food Culture</a>
+                <a href="Italian_food_culture.html">Italian Food Culture</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdownbtn">Recipes
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownContent">
+                <a href="Chinese_Food_Recipes.html">Chinese Food Recipes</a>
+                <a href="Japanese_Food_Recipes.html">Japanese Food Recipes</a>
+                <a href="Korean_Food_Recipes.html">Korean Food Recipes</a>
+                <a href="Italian_Food_Recipes.html">Italian Food Recipes</a>
+            </div>
+        </div> 
+        <a href="Order.html">Order</a> 
+        <a href="Contact.html">Contact</a>		
+    </nav>
+    <article>
+        <h1>Contact Me</h1>
+        <section>
+            <h2>My Contact Information</h2>  
+            <div class="p5wrapper1">
+                <div class="p5section1">                       
+                    <p>You can contact me at my office hour (09:00 to 20:00) by using the following conact information:</p>
+                    <ul>
+                        <li>My telephone number: 7788820749</li>
+                        <li>My email address: tsuik4@student.douglascollege.ca</li>
+                        <li>My location: Kingways, Burnaby, BC</li>
+                    </ul>
+                    <p>Feel free to ask me questions or you can just chat with me:)</p>
+                    <p>Besides, you can leave your questions and feedback on the following feedback form. Thank you.</p>
+                </div>
+                <div class="p5section2">
+                    <div>
+                        <img src="images/contact.jpg" alt="Contact Information" id="photo2">
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section>
+            <h2>Feedback Form</h2>
+            <div class="wrappperForFlexbox2">
+            <form class="form_for_contact">
+                <label>Please enter your first name:</label>
+                <input type="text" id="fName" size="20" placeholder="First Name"><br><br>
+                <label>Please enter your last name:</label>
+                <input type="text" id="lName" size="20" placeholder="Last Name"><br><br>
+                <label>Please enter your email address:</label>
+                <input type="email" id="email" size="30" placeholder="Email"><br><br>
+                <label>Please enter your phone number:</label>
+                <input type="tel" id="tele" size="20" placeholder="Phone Number"><br><br>
+                <label>I like the food from your restaurant:</label>
+                <div class="wrappperForFlexbox2">
+                <table class="table_for_form">
+                    <tr>
+                        <th class="tableForm">&nbsp;</th>
+                        <th class="tableForm">1</th>
+                        <th class="tableForm">2</th>
+                        <th class="tableForm">3</th>
+                        <th class="tableForm">4</th>
+                        <th class="tableForm">5</th>
+                        <th class="tableForm">&nbsp;</th>
+                    </tr>
+                    <tr>
+                        <td class="tableForm">Strongly Disagree</td>
+                        <td class="tableForm"><input type="radio" name="foodLikehood" class="Likehoodchoice" value="1" required></td>
+                        <td class="tableForm"><input type="radio" name="foodLikehood" class="Likehoodchoice" value="2"></td>
+                        <td class="tableForm"><input type="radio" name="foodLikehood" class="Likehoodchoice" value="3"></td>
+                        <td class="tableForm"><input type="radio" name="foodLikehood" class="Likehoodchoice" value="4"></td>
+                        <td class="tableForm"><input type="radio" name="foodLikehood" class="Likehoodchoice" value="5"></td>
+                        <td class="tableForm">Strongly Agree</td>
+                    </tr>
+                </table>
+                </div><br><br>
+                <label>I find the information you share in this website is useful:</label>
+                <div class="wrappperForFlexbox2">
+                <table class="table_for_form">
+                    <tr>
+                        <th class="tableForm">&nbsp;</th>
+                        <th class="tableForm">1</th>
+                        <th class="tableForm">2</th>
+                        <th class="tableForm">3</th>
+                        <th class="tableForm">4</th>
+                        <th class="tableForm">5</th>
+                        <th class="tableForm">&nbsp;</th>
+                    </tr>
+                    <tr>
+                        <td class="tableForm">Strongly Disagree</td>
+                        <td class="tableForm"><input type="radio" name="infoLikehood" class="Likehoodchoice" value="1" required></td>
+                        <td class="tableForm"><input type="radio" name="infoLikehood" class="Likehoodchoice" value="2"></td>
+                        <td class="tableForm"><input type="radio" name="infoLikehood" class="Likehoodchoice" value="3"></td>
+                        <td class="tableForm"><input type="radio" name="infoLikehood" class="Likehoodchoice" value="4"></td>
+                        <td class="tableForm"><input type="radio" name="infoLikehood" class="Likehoodchoice" value="5"></td>
+                        <td class="tableForm">Strongly Agree</td>
+                    </tr>
+                </table>
+                </div><br><br>
+                <label>Please leave your feedback or questions here:</label><br>
+                <textarea id="comment" cols="60" rows="10" placeholder="Feedback or Questions (optional)"></textarea>
+                <p>
+                    <input type="reset" name="reset" id="btnReset" value="Reset">
+                    <input type="button" name="submit" id="btnSubmit" value="Submit">
+                </p>
+            </form>
+        </div>
+        </section>
+    </article>
+    <script src="scripts/contact.js"></script>
+</body>
+</html>

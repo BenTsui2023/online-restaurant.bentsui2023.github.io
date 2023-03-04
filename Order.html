@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>			
+        <a href="index.html" class="introduction">Introduction</a>
+        <div class="dropdown">
+            <button class="dropdownbtn">Food Culture
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownContent">
+                <a href="Chinese_food_culture.html">Chinese Food Culture</a>
+                <a href="Japanese_food_culture.html">Japanese Food Culture</a>
+                <a href="Korean_food_culture.html">Korean Food Culture</a>
+                <a href="Italian_food_culture.html">Italian Food Culture</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropdownbtn">Recipes
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownContent">
+                <a href="Chinese_Food_Recipes.html">Chinese Food Recipes</a>
+                <a href="Japanese_Food_Recipes.html">Japanese Food Recipes</a>
+                <a href="Korean_Food_Recipes.html">Korean Food Recipes</a>
+                <a href="Italian_Food_Recipes.html">Italian Food Recipes</a>
+            </div>
+        </div> 
+        <a href="Order.html">Order</a> 
+        <a href="Contact.html">Contact</a>		
+    </nav>
+    <article>
+        <h1>Online Restaurant</h1>
+        <section>
+            <h2>Introduction to my online restaurant</h2>
+            <p>
+                I am not just only want to share the knowledge and the recipes of foods from different countries. I also want to share the taste of them. Therefore, I start my online restaurant in my private kitchen and cook dishes with heart and sell them.
+            </p>
+            <p>
+                This page provides a online food ordering and delivery services to you. You can follow the below instuctions to order the foods.     
+            </p>
+            <ol class="shop_list">
+                <li>Click the checkbox to choose which foods you want to buy</li>
+                <li>Enter the quantity of the item you want to buy</li>
+                <li>Choose the delivery location of your address</li>
+                <li>Leave your delivery address and contact number</li>
+                <li>The summary of your order will be shown</li>
+            </ol>
+            <p>Also, there is a special discount if your order amount is over a specific value. The detail is shown below:</p>
+            <ul>
+                <li>for total food amount between $50 and $80: 10% discount</li>
+                <li>for total food amount between $81 and $100: 15% discount</li>
+                <li>for total food amount over $100: 20% discount</li>
+            </ul>
+            <p>If you have further questions, you can look at the frequently asked questions. It may help you.</p>
+            <div class="accordion">
+                <h2>Frequently Asked Questions</h2>
+                <hr>
+                <div class="wrapper_for_accordion">
+                    <div class="label">
+                        <i class="fa fa-angle-down"></i>
+                        When can I receive the delivery?
+                    </div>
+                    <div class="content">
+                        The delivery time depends on the delivery address. We make a promise that your ordered foods will be delivered within one and a half hour after ordering. If we fail to deliver the food within one and a half hour, you can make a full refund.
+                    </div>
+                </div>
+                <hr>
+                <div class="wrapper_for_accordion">
+                    <div class="label"><i class="fa fa-angle-down"></i>How do I pay for the bill?
+                    </div>
+                    <div class="content">
+                        There are two payment methods which you can use to make the payment:<br>
+                        <ol>
+                            <li>use your online banking to pay</li>
+                            <li>use credit card/debit card to pay</li>
+                        </ol>
+                    </div>
+                </div>
+                <hr>
+                <div class="wrapper_for_accordion">
+                    <div class="label"><i class="fa fa-angle-down"></i>How can i refund if i cancel the order?
+                    </div>
+                    <div class="content">
+                        You can only refund it if there is problem with the foods or the delivery. For applying the refund, you can contact me by my phone number or email. The fund will be return to your bank account or credit/debit card within a serveral days.
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <h3>If you are ready to order food, you can click the below button to start it!</h3>
+        </section>
+        <div>
+            <div class="wrappperForFlexbox2">
+                <button id="modalBtn">Start my order</button>            
+                <div id="modal" class="modal_dialog_container">
+                    <div class="modal-content">
+                        <fieldset>
+                            <legend class="legend"> Online Restaurant Ordering Form - Choose your Food</legend>
+                                <div class="wrappperForFlexbox3">
+                                    <div class="wrappperForFlexbox2 flexbox1">
+                                        <label class="label"><img src="images/Char_Siu.jpg" alt="Char Siu" class="label_image"></label>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <input type="checkbox" name="food" id="charSiu" value="17.55"> Char Siu ($17.55)
+                                        </div>
+                                        <br>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <label  class="label_quantity">Quantity: </label>
+                                            <input type="text" size="5" name="quantity" id="charSiuQnty" value="0"> <br>
+                                        </div>
+                                    </div>                                  
+                                    <div class="wrappperForFlexbox2 flexbox1">
+                                        <label class="label"><img src="images/Dim_Sum.jpg" alt="Dim Sum" class="label_image"></label>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <input type="checkbox" name="food" id="dimSum" value="12.65"> Dim Sum ($12.65)
+                                        </div>
+                                        <br>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <label  class="label_quantity">Quantity: </label>
+                                            <input type="text" size="5" name="quantity" id="dimSumQnty" value="0"> <br>
+                                        </div>
+                                    </div>
+                                    <div class="wrappperForFlexbox2 flexbox1">
+                                        <label class="label"><img src="images/kimchi.jpg" alt="kimchi" class="label_image"></label>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <input type="checkbox" name="food" id="kimchi" value="6.45"> kimchi ($6.45)
+                                        </div>
+                                        <br>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <label  class="label_quantity">Quantity: </label>
+                                            <input type="text" size="5" name="quantity" id="kimchiQnty" value="0"> <br>
+                                        </div>
+                                    </div>
+                                    <div class="wrappperForFlexbox2 flexbox1">
+                                        <label class="label"><img src="images/Ma_Po_Tofu.jpg" alt="Ma Po Tofu" class="label_image"></label>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <input type="checkbox" name="food" id="maPoTofu" value="18.45"> Ma Po Tofu ($18.45)
+                                        </div>
+                                        <br>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <label  class="label_quantity">Quantity: </label>
+                                            <input type="text" size="5" name="quantity" id="maPoTofuQnty" value="0"> <br>
+                                        </div>
+                                    </div>
+                                    <div class="wrappperForFlexbox2 flexbox1">
+                                        <label class="label"><img src="images/Mushroom_Risotto1.jpg" alt="Mushroom Risotto" class="label_image"></label>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <input type="checkbox" name="food" id="mushroomRisotto" value="20.65"> Mushroom Risotto ($20.65)
+                                        </div>
+                                        <br>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <label  class="label_quantity">Quantity: </label>
+                                            <input type="text" size="5" name="quantity" id="mushroomRisottoQnty" value="0"> <br>
+                                        </div>
+                                    </div>
+                                    <div class="wrappperForFlexbox2 flexbox1">
+                                        <label class="label"><img src="images/Kimbap1.jpeg" alt="Kimbap" class="label_image"></label>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <input type="checkbox" name="food" id="kimbap" value="12.00"> Kimbap ($12.00)
+                                        </div>
+                                        <br>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <label  class="label_quantity">Quantity: </label>
+                                            <input type="text" size="5" name="quantity" id="kimbapQnty" value="0"> <br>
+                                        </div>
+                                    </div>
+                                    <div class="wrappperForFlexbox2 flexbox1">
+                                        <label class="label"><img src="images/Pasta.jpg" alt="Pasta" class="label_image"></label>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <input type="checkbox" name="food" id="pasta" value="16.30"> Pasta ($16.30)
+                                        </div>
+                                        <br>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <label  class="label_quantity">Quantity: </label>
+                                            <input type="text" size="5" name="quantity" id="pastaQnty" value="0"> <br>
+                                        </div>
+                                    </div>
+                                    <div class="wrappperForFlexbox2 flexbox1">
+                                        <label class="label"><img src="images/yakisoba1.jpg" alt="yakisoba" class="label_image"></label>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <input type="checkbox" name="food" id="yakisoba" value="17.60"> yakisoba ($17.60)
+                                        </div>
+                                        <br>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <label  class="label_quantity">Quantity: </label>
+                                            <input type="text" size="5" name="quantity" id="yakisobaQnty" value="0"> <br>
+                                        </div>
+                                    </div>
+                                    <div class="wrappperForFlexbox2 flexbox1">
+                                        <label class="label"><img src="images/ramen.jpg" alt="ramen" class="label_image"></label>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <input type="checkbox" name="food" id="ramen" value="21.60"> ramen ($21.60)
+                                        </div>
+                                        <br>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <label  class="label_quantity">Quantity: </label>
+                                            <input type="text" size="5" name="quantity" id="ramenQnty" value="0"> <br>
+                                        </div>
+                                    </div>
+                                    <div class="wrappperForFlexbox2 flexbox1">
+                                        <label class="label"><img src="images/Kung_Pao_Chicken1.jpg" alt="Kung Pao Chicken" class="label_image"></label>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <input type="checkbox" name="food" id="kungPaoChicken" value="24.55"> Kung Pao Chicken ($24.55)
+                                        </div>
+                                        <br>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <label  class="label_quantity">Quantity: </label>
+                                            <input type="text" size="5" name="quantity" id="kungPaoChickenQnty" value="0"> <br>
+                                        </div>
+                                    </div>
+                                    <div class="wrappperForFlexbox2 flexbox1">
+                                        <label class="label"><img src="images/Sake_Steamed_Clams.jpg" alt="Sake Steamed Clams" class="label_image"></label>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <input type="checkbox" name="food" id="sakeSteamedClams" value="18.20"> Sake Steamed Clams ($18.20)
+                                        </div>
+                                        <br>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <label  class="label_quantity">Quantity: </label>
+                                            <input type="text" size="5" name="quantity" id="sakeSteamedClamsQnty" value="0"> <br>
+                                        </div>
+                                    </div>
+                                    <div class="wrappperForFlexbox2 flexbox1">
+                                        <label class="label"><img src="images/Pizza.jpg" alt="Pizza" class="label_image"></label>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <input type="checkbox" name="food" id="pizza" value="26.50"> Pizza ($26.50)
+                                        </div>
+                                        <br>
+                                        <div class="wrappperForFlexbox1"> 
+                                            <label  class="label_quantity">Quantity: </label>
+                                            <input type="text" size="5" name="quantity" id="pizzaQnty" value="0"> <br>
+                                        </div>
+                                    </div>
+                                </div>                                    
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                            <legend class="legend"> Choose your delivery address </legend>
+                            <input type="radio" name="delivery_address" id="pickup" value="0">Pick up at my store (+$0.00)<br>
+                            <input type="radio" name="delivery_address" id="burnaby"  value="3">Burnaby (+$3.00)<br>
+                            <input type="radio" name="delivery_address" id="nVancouver" value="10">North Vancouver (+$10.00)<br> 
+                            <input type="radio" name="delivery_address" id="richmond" value="8">Richmond (+$8.00)<br> 
+                            <input type="radio" name="delivery_address" id="eVancouver" value="5">East Vancouver (+$5.00)<br> 
+                        </fieldset>
+                        <br>
+                        <fieldset> 
+                            <input type="reset" name="reset" id="btnReset" value="Reset">
+                            <input type="button" name="submit" id="btnSubmit" value="Confirm my order">
+                        </fieldset>
+                        <br>
+                        <section>
+                            <div class="paymentSum">
+                                <h3>Your total payment amount</h3>
+                                <hr>
+                                <p id="foodPrice"></p>
+                                <input type="button" name="confirm" id="btnConfirm" value="Confirm and Pay">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <script src="scripts/order.js"></script>
+</body>
+</html>
